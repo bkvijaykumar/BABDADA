@@ -1,0 +1,202 @@
+/* cre_company.css */
+
+/* --- Default Styles (can be overridden by color classes) --- */
+body {
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+}
+
+.company-container {
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.image-box {
+    margin-bottom: 20px;
+}
+
+.image-box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.table-container {
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* --- Color Scheme Overrides (based on body class) --- */
+
+/* Black Theme */
+body.color-black {
+    background-color: black;
+    color: white; /* For general text */
+}
+body.color-black .company-container {
+    background-color: #333;
+}
+body.color-black h2 {
+    color: white;
+}
+body.color-black .image-box img {
+    border: 5px solid white;
+}
+body.color-black .table-container {
+    background-color: #555;
+}
+body.color-black .form-control {
+    background-color: #666;
+    color: white;
+    --placeholder-color: #aaa;
+}
+body.color-black .btn-primary {
+    background-color: #444;
+    border-color: #444;
+}
+.btn.black-btn:hover { /* This relies on JS adding .black-btn */
+    background-color: grey !important;
+    border-color: grey !important;
+}
+
+
+/* Blue Theme */
+body.color-blue {
+    background-color: darkblue;
+    color: RoyalBlue;
+}
+body.color-blue .company-container {
+    background-color: #1f3a93;
+}
+body.color-blue h2 {
+    color: RoyalBlue;
+}
+body.color-blue .image-box img {
+    border: 5px solid RoyalBlue;
+}
+body.color-blue .table-container {
+    background-color: #2a52be;
+}
+body.color-blue .form-control {
+    background-color: white;
+    color: RoyalBlue;
+    --placeholder-color: lightgrey;
+}
+body.color-blue .btn-primary {
+    background-color: RoyalBlue;
+    border-color: RoyalBlue;
+}
+.btn.blue-btn:hover { /* This relies on JS adding .blue-btn */
+    background-color: darkblue !important;
+    border-color: darkblue !important;
+}
+
+
+/* Red Theme */
+body.color-red {
+    background-color: maroon;
+    color: darkred;
+}
+body.color-red .company-container {
+    background-color: #8B0000;
+}
+body.color-red h2 {
+    color: darkred;
+}
+body.color-red .image-box img {
+    border: 5px solid darkred;
+}
+body.color-red .table-container {
+    background-color: #A52A2A;
+}
+body.color-red .form-control {
+    background-color: grey;
+    color: darkred;
+    --placeholder-color: #ccc;
+}
+body.color-red .btn-primary {
+    background-color: darkred;
+    border-color: darkred;
+}
+.btn.red-btn:hover { /* This relies on JS adding .red-btn */
+    background-color: maroon !important;
+    border-color: maroon !important;
+}
+
+
+/* Brown Theme */
+body.color-brown {
+    background-color: #5e4334;
+    color: #8d6e63;
+}
+body.color-brown .company-container {
+    background-color: #6d4c41;
+}
+body.color-brown h2 {
+    color: #8d6e63;
+}
+body.color-brown .image-box img {
+    border: 5px solid #8d6e63;
+}
+body.color-brown .table-container {
+    background-color: #795548;
+}
+body.color-brown .form-control {
+    background-color: #f2f2f2;
+    color: #8d6e63;
+    --placeholder-color: #c5b7b0;
+}
+body.color-brown .btn-primary {
+    background-color: #8d6e63;
+    border-color: #8d6e63;
+}
+.btn.brown-btn:hover { /* This relies on JS adding .brown-btn */
+    background-color: #5e4334 !important;
+    border-color: #5e4334 !important;
+}
+
+
+/* Pink Theme */
+body.color-pink {
+    background-color: #cc6699;
+    color: #e05391;
+}
+body.color-pink .company-container {
+    background-color: #de89b0;
+}
+body.color-pink h2 {
+    color: #e05391;
+}
+body.color-pink .image-box img {
+    border: 5px solid #e05391;
+}
+body.color-pink .table-container {
+    background-color: #efacc8;
+}
+body.color-pink .form-control {
+    background-color: #f2f2f2;
+    color: #e05391;
+    --placeholder-color: #f5dbe7;
+}
+body.color-pink .btn-primary {
+    background-color: #e05391;
+    border-color: #e05391;
+}
+.btn.pink-btn:hover { /* This relies on JS adding .pink-btn */
+    background-color: #cc6699 !important;
+    border-color: #cc6699 !important;
+}
+
+
+/* Placeholder text color for IE/Edge */
+.form-control:-ms-input-placeholder {
+    color: var(--placeholder-color);
+}
+.form-control::-ms-input-placeholder {
+    color: var(--placeholder-color);
+}

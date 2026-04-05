@@ -1,0 +1,96 @@
+/* login.css */
+
+/* Initially set for blue scheme on login page */
+body {
+    background-color: darkblue; /* Default body background for login */
+}
+
+/*.login-container {
+    background-color: #1f3a93; /* Slightly lighter dark blue */
+    height: 100vh;
+}*/
+
+.image-box {
+    margin-bottom: 20px;
+}
+
+.image-box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid RoyalBlue; /* Default image border color for login */
+    border-radius: 50%;
+}
+
+/* Apply border color here - assuming this is the border around the image */
+/* Note: If the border is on the img tag, this rule is less effective */
+.image-box { 
+    border-color: RoyalBlue; /* Ensure this takes effect if img border is not meant */
+}
+
+
+.table-container {
+    background-color: #2a52be; /* Medium blue */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/*.form-control {
+    background-color: white; /* Default textbox background for login */
+    color: RoyalBlue; /* Default textbox fore color for login */
+    /* Placeholder color is inherited from shared.css or set by JS */
+}*/
+
+.btn-primary {
+    background-color: RoyalBlue; /* Default button background for login */
+    border-color: RoyalBlue;
+}
+
+.btn-primary:hover {
+    background-color: darkblue; /* Default button hover for login */
+    border-color: darkblue;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap; /* Allow checkboxes to wrap on smaller screens */
+    gap: 15px; /* Spacing between checkbox containers */
+}
+
+/* Specific Checkbox Overrides (if needed for the login page) */
+/* Example: if you wanted to change the checkmark border specifically for login */
+/*
+.login-container .checkmark {
+    border-color: navy;
+}
+*/
+
+/* Button hover styles based on the color scheme class added by JS */
+/* These must be in login.css because they are specific to the login form's button */
+.btn.black-btn:hover {
+    background-color: grey !important;
+    border-color: grey !important;
+}
+
+.btn.blue-btn:hover {
+    background-color: darkblue !important;
+    border-color: darkblue !important;
+}
+
+.btn.red-btn:hover {
+    background-color: maroon !important;
+    border-color: maroon !important;
+}
+
+.btn.brown-btn:hover {
+    background-color: #5e4334 !important;
+    border-color: #5e4334 !important;
+}
+
+.btn.pink-btn:hover {
+    background-color: #cc6699 !important;
+    border-color: #cc6699 !important;
+}
+

@@ -1,0 +1,98 @@
+/* shared.css */
+
+/* Base Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    color: RoyalBlue; /* Default text color, can be overridden */
+    font-weight: bold;
+}
+
+/* Base Form Control Styles */
+.form-control {
+    font-size: 14px;
+    border-radius: 5px; /* Added for consistency */
+    /* Use a CSS variable for placeholder color */
+    --placeholder-color: lightgrey; 
+}
+
+.form-control::placeholder {
+    color: var(--placeholder-color); /* Referencing the CSS variable */
+}
+
+/* General Button Styles (if you have common buttons across pages) */
+.btn-primary {
+    border-radius: 5px; /* Added for consistency */
+}
+
+
+/* Custom Checkbox Utility Styles */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 15px; /* Added for spacing if in a group */
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    border: 2px solid RoyalBlue; /* Default checkmark border color */
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc; /* Hover effect for the custom checkbox box */
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    /* When checked, the background color will be set by JS or a more specific CSS rule */
+    border: 2px solid RoyalBlue; /* Default checked border color */
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white; /* Checkmark icon color */
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Placeholder for button hover styles that JS will toggle */
+/* These specific hover rules will be in login.css or another specific file */
+/* .btn.black-btn:hover { background-color: grey !important; border-color: grey !important; } */
+/* ... other specific hover rules ... */
+

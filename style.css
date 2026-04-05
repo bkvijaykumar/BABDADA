@@ -1,0 +1,130 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    color: RoyalBlue; /* Default text color */
+    font-weight: bold;
+}
+
+/* Initially set for blue scheme */
+body {
+    background-color: darkblue; /* default body background */
+}
+
+.login-container {
+    background-color: #1f3a93; /* Slightly lighter dark blue */
+    height: 100vh;
+}
+
+.image-box {
+    margin-bottom: 20px;
+}
+
+.image-box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid RoyalBlue; /* default image border color */
+    border-radius: 50%;
+}
+
+.image-box { /* Apply border color here */
+    border-color: RoyalBlue;
+}
+
+.table-container {
+    background-color: #2a52be; /* Medium blue */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.form-control {
+    background-color: white; /* Default textbox background */
+    color: RoyalBlue; /* Default textbox fore color */
+    font-size: 14px;
+    /* Use a CSS variable for placeholder color */
+    --placeholder-color: lightgrey; 
+}
+
+.form-control::placeholder {
+    color: var(--placeholder-color); /* Referencing the CSS variable */
+}
+
+.btn-primary {
+    background-color: RoyalBlue; /* Default button background */
+    border-color: RoyalBlue;
+}
+
+.btn-primary:hover {
+    background-color: darkblue; /* Default button hover */
+    border-color: darkblue;
+}
+
+.checkbox-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Custom Checkbox Styles (no changes here, as they are handled in the first set of files) */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 15px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    border: 2px solid RoyalBlue; 
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    border: 2px solid RoyalBlue; 
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/shared.css">
+ <link rel="stylesheet" href="static/login.css">
+</head>
+<body>
+     <div class="container-fluid login-container">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-6 text-center">
+                <div class="image-box">
+                    <img id="profileImage" src="static/img/img1.png" alt="Default Image" class="img-fluid rounded-circle">
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    <label for="imageUpload" class="upload-btn btn btn-primary mt-2">Upload Image</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="table-container">
+                    <form id="loginForm" autocomplete="off">
+                        <table class="table">
+                            <tr>
+                                <td><label for="username">Username:</label></td>
+                                <td><input type="text" placeholder="Enter the Name" id="username" class="form-control" autofocus></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Password:</label></td>
+                                <td><input type="password" placeholder="Enter the Password" id="password" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center">
+                                    <div class="checkbox-group">
+                                        <label class="checkbox-container">Black
+                                            <input type="checkbox" id="blackcolorcheckbox" name="colorCheckbox" value="black">
+                                            <span class="checkmark" style="background-color: black;"></span>
+                                        </label>
+                                        <label class="checkbox-container">Blue
+                                            <input type="checkbox" id="bluecolorcheckbox" name="colorCheckbox" value="blue" checked>
+                                            <span class="checkmark" style="background-color: blue;"></span>
+                                        </label>
+                                        <label class="checkbox-container">Red
+                                            <input type="checkbox" id="redcolorcheckbox" name="colorCheckbox" value="red">
+                                            <span class="checkmark" style="background-color: red;"></span>
+                                        </label>
+                                        <label class="checkbox-container">Brown
+                                            <input type="checkbox" id="browncolorcheckbox" name="colorCheckbox" value="brown">
+                                            <span class="checkmark" style="background-color: brown;"></span>
+                                        </label>
+                                        <label class="checkbox-container">Pink
+                                            <input type="checkbox" id="pinkcolorcheckbox" name="colorCheckbox" value="pink">
+                                            <span class="checkmark" style="background-color: pink;"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="text-center">
+                                    <button type="submit" class="btn btn-primary" id="loginBtn">Login</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/shared.js"></script>
+	<script src="static/login.js"></script>
+
+</body>
+</html>
